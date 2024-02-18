@@ -10,6 +10,7 @@ function Header() {
 
         <div className="flex-1 flex items-center justify-end space-x-4">
           <DarkModeToggle />
+
           <UserButton />
         </div>
       </nav>
