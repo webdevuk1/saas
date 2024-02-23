@@ -13,7 +13,7 @@ function UserAvatar({
 }: {
   name: string;
   image: string;
-  className: string;
+  className?: string;
 }) {
   // Rendering the UserAvatar component
   return (
