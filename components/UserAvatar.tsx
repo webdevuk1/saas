@@ -11,8 +11,8 @@ function UserAvatar({
   image,
   className,
 }: {
-  name: string;
-  image: string;
+  name?: string | null;
+  image?: string | null;
   className?: string;
 }) {
   // Rendering the UserAvatar component
@@ -22,7 +22,7 @@ function UserAvatar({
       {image && (
         <Image
           src={image} // Image source
-          alt={name} // Image alt text
+          alt={name || "User Name"} // Image alt text
           width={40} // Image width
           height={40} // Image height
           className="rounded-full" // Additional image class
